@@ -1,3 +1,4 @@
+Kill the session
 from fastapi import FastAPI, HTTPException, Query, Depends, Security, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import APIKeyHeader
@@ -611,3 +612,4 @@ if __name__ == "__main__":
         print(f"\n[NOTE] Do NOT use http://0.0.0.0:8000 in browser!")
         print(f"       0.0.0.0 is for server binding only, not for client access.\n")
         uvicorn.run(app, host="0.0.0.0", port=8000)
+
